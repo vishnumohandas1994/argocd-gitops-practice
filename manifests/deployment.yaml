@@ -17,6 +17,7 @@ spec:
           image: nginx:1.25
           ports:
             - containerPort: 80
+        env:
         - name: APP_ENV
           valueFrom:
             configMapKeyRef:
