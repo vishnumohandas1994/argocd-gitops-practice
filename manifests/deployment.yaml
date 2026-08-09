@@ -17,15 +17,14 @@ spec:
           image: nginx:1.25
           ports:
             - containerPort: 80
-        env:
-        - name: APP_ENV
-          valueFrom:
-            configMapKeyRef:
-              name: gitops-demo-config
-              key: APP_ENV
-
-        - name: APP_MESSAGE
-          valueFrom:
-            configMapKeyRef:
-              name: gitops-demo-config
-              key: APP_MESSAGE
+          env:
+            - name: APP_ENV
+              valueFrom:
+                configMapKeyRef:
+                  name: gitops-demo-config
+                  key: APP_ENV
+            - name: APP_MESSAGE
+              valueFrom:
+                configMapKeyRef:
+                  name: gitops-demo-config
+                  key: APP_MESSAGE
