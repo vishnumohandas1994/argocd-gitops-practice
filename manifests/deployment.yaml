@@ -11,6 +11,8 @@ spec:
     metadata:
       labels:
         app: gitops-demo
+      annotations:
+        config-version: "2"
     spec:
       containers:
         - name: nginx
