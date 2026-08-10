@@ -4,4 +4,4 @@ metadata:
   name: gitops-demo-config
 data:
   APP_ENV: "development"
-  APP_MESSAGE: "Hello from GitOps"
+  APP_MESSAGE: "Hello from ArgoCd"
