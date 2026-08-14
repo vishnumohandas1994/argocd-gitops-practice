@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: gitops-demo
-          image: nginx:does-not-exist
+          image: nginx:1.26
           ports:
             - containerPort: 80
