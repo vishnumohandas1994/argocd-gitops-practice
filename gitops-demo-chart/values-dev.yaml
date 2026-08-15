@@ -2,7 +2,7 @@ replicaCount: 3
 
 image:
   repository: nginx
-  tag: "does-not-exist"
+  tag: "1.27"
 
 service:
   type: ClusterIP
